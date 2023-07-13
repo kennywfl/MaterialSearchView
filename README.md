@@ -1,5 +1,5 @@
 # MaterialSearchView
-Cute library to implement SearchView in a Material Design Approach. *Works from Android API 14 (ICS) and above*.
+Cute library to implement SearchView in a Material Design Approach. *Works from Android API 21 (Lollipop) and above*.
 
 ![sample](https://raw.githubusercontent.com/MiguelCatalan/MaterialSearchView/master/art/voice.gif) ![sample](https://raw.githubusercontent.com/MiguelCatalan/MaterialSearchView/master/art/default.gif)
 
@@ -14,9 +14,29 @@ http://www.materialdoc.com/search-filter/
 
 # Usage
 **Add the dependencies to your gradle file:**
-```javascript
+### Groovy
+```groovy
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
-    compile 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.github.kennywfl:MaterialSearchView:2.0.0'
+}
+```
+
+### Kotlin DSL
+```kotlin
+import java.net.URI
+
+repositories {
+    maven {
+        url = URI.create("https://jitpack.io")
+    }
+}
+
+dependencies {
+    implementation("com.github.kennywfl:MaterialSearchView:2.0.0")
 }
 ```
 **Add MaterialSearchView to your layout file along with the Toolbar** *(Add this block at the bottom of your layout, in order to display it over the rest of the view)*:
